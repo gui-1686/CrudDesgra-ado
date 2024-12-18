@@ -1,0 +1,59 @@
+CRUD em Python com MySQL
+
+
+Funcionalidades:
+
+Cadastrar (Create): Adicionar novos registros ao banco de dados.
+Consultar (Read): Visualizar registros existentes.
+Atualizar (Update): Modificar registros existentes.
+Excluir (Delete): Remover registros do banco de dados.
+
+
+Tecnologias Utilizadas:
+
+Python 3.x
+MySQL
+Biblioteca mysql-connector-python 
+
+O que voce precisa pra rodar o codigo:
+
+Python 3.x 
+MySQL 
+Pip (gerenciador de pacotes do Python)
+
+Instale as dependências:
+pip install mysql-connector-python ou pip install pymysql
+
+Configure seu banco de dados Mysql:
+
+    1. Crie um banco de dados no MySQL:
+        CREATE DATABASE nome_do_banco; (no caso o meu está com o nome 'cdd_db')
+
+    2. Configure as tabelas necessárias:
+        CREATE TABLE exemplo (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        codigo VARCHAR(100),
+        descricao VARCHAR(100),
+        area VARCHAR(100),
+         );
+
+    3. Altere as credenciais de acesso ao banco no código (exemplo em config.py):
+
+      Obs: aqui está o exmemplo, mas como usei o python, indico fazer essa alteração direto no codigo, para melhor conexão com o mysql.
+
+        # config.py
+        db_config = {
+                'host': 'localhost',
+                'user': 'seu_usuario',
+                'password': 'sua_senha',
+                'database': 'nome_do_banco'
+                }
+
+
+é um proojeto bem simples, facil edição.
+
+
+
+
+
+
